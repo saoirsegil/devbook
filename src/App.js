@@ -1,8 +1,17 @@
-import Home from "./home/Home";
 import "./App.css";
+import Header from "./component/header/Header";
 
 function App() {
-  return <Home />;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
+
+  /* App Body */
+  /* Siderbar */
+  /* Feed */
+  /* Widgets */
 }
 
 export default App;
