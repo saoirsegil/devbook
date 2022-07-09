@@ -5,14 +5,14 @@ import "./Header.css";
 import FacebookIcon from "../../asset/facebookk.png";
 
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import HomeIcon from "@mui/icons-material/Home";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import ExtensionOutlinedIcon from "@mui/icons-material/ExtensionOutlined";
 import WidgetsOutlinedIcon from "@mui/icons-material/WidgetsOutlined";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
-import { Avatar, IconButton } from "@mui/material";
+import { Avatar, Badge, IconButton } from "@mui/material";
 
 const Header = () => {
   return (
@@ -21,12 +21,12 @@ const Header = () => {
         <img src={FacebookIcon} alt="logo" />
         <div className="header__input">
           <SearchRoundedIcon />
-          <input type="text" placeholder="Search Facebook" />
+          <input type="text" placeholder="Search Devbook" />
         </div>
       </div>
       <div className="header__middle">
-        <div className="header__option">
-          <HomeOutlinedIcon fontSize="large" />
+        <div className="header__option header__option--active">
+          <HomeIcon fontSize="large" />
         </div>
         <div className="header__option">
           <SubscriptionsOutlinedIcon fontSize="large" />
@@ -42,7 +42,7 @@ const Header = () => {
         <div className="header__info">
           <IconButton
             sx={{
-              backgroundColor: "#3a3b3c",
+              backgroundColor: "#edecec",
               borderRadius: "33px",
               marginRight: "15px",
             }}
@@ -50,33 +50,35 @@ const Header = () => {
             <WidgetsOutlinedIcon
               fontSize="large"
               sx={{
-                color: "#E4E6EB",
+                color: "#gray",
               }}
             />
           </IconButton>
           <IconButton
             sx={{
-              backgroundColor: "#3a3b3c",
+              backgroundColor: "#edecec",
               borderRadius: "33px",
               marginRight: "15px",
             }}
           >
-            <MessageOutlinedIcon fontSize="large" sx={{ color: "#E4E6EB" }} />
+            <MessageOutlinedIcon fontSize="large" sx={{ color: "gray" }} />
           </IconButton>
           <IconButton
             sx={{
-              backgroundColor: "#3a3b3c",
+              backgroundColor: "#edecec",
               borderRadius: "33px",
               marginRight: "15px",
             }}
           >
-            <NotificationsActiveOutlinedIcon
-              fontSize="large"
-              sx={{ color: "#E4E6EB" }}
-            />
+            <Badge badgeContent={143} color="error">
+              <NotificationsActiveOutlinedIcon
+                fontSize="large"
+                sx={{ color: "#gray" }}
+              />
+            </Badge>
           </IconButton>
           <IconButton>
-            <Avatar fontSize="large" />
+            <Avatar src="https://avatars.githubusercontent.com/u/95516878?v=4" />
           </IconButton>
         </div>
       </div>
