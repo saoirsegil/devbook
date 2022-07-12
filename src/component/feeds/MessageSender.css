@@ -11,7 +11,12 @@
 .messageSender__top {
   display: flex;
   padding: 15px;
-  border-bottom: 1px solid #eff2f5;
+  border-bottom: 1px solid #edecec;
+}
+
+.messageSender__top > form {
+  flex: 1;
+  display: flex;
 }
 
 .messageSender__top > form > input {
@@ -29,6 +34,19 @@
 
 .messageSender__input {
   flex: 1;
+  cursor: pointer;
+}
+
+.messageSender__input:hover {
+  background-color: #f5f6f8;
+}
+
+.messageSender__imageInput {
+  cursor: pointer;
+}
+
+.messageSender__imageInput:hover {
+  background-color: #f5f6f8;
 }
 
 .messageSender__bottom {
@@ -42,6 +60,9 @@
   padding: 20px;
   margin: 5px;
   color: gray;
+  width: 27%;
+  height: 27%;
+  justify-content: center;
 }
 
 .messageSender__option > h3 {

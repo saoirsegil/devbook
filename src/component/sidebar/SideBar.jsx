@@ -15,7 +15,7 @@ const SideBar = () => {
   return (
     <div className="sidebar">
       <SideBarRow
-        src="https://avatars.githubusercontent.com/u/95516878?v=4"
+        src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/288992530_5669659729713319_282062131013335484_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGpaPm3N8pBnUUIMBKpbFXL3JmLNA-dJT3cmYs0D50lPdIrr81pbqfYOGuNilt8XFziRpCfLIERhfxbLor6Fjnb&_nc_ohc=cCk1lG1uFRUAX-qPsoH&_nc_ht=scontent.fmnl25-3.fna&oh=00_AT-2QaGaOwLMiFzWbJMCDhV24habuCg6Mq3fwvcLFRovfg&oe=62CFC322"
         title="Jayson Prince Diaz"
       />
       <SideBarRow Icon={GroupIcon} title="Friends" />

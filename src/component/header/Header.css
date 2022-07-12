@@ -22,6 +22,7 @@
   border: none;
   background-color: transparent;
   outline-width: 0;
+  width: 100%;
 }
 
 .header__input > .MuiSvgIcon-root {
@@ -69,7 +70,7 @@
 }
 
 .header__option:hover {
-  background-color: #3a3b3c;
+  background-color: #edecec;
   border-radius: 10px;
   align-items: center;
   padding: 0 30px;
