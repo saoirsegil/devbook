@@ -4,9 +4,9 @@ const Widgets = () => {
   return (
     <div className="widget">
       <iframe
-        src="https://www.tiktok.com/@jaysonprincediazz"
+        src="https://mail.google.com/mail/u/0/?ogbl#inbox"
         title="dev"
-        width="340"
+        width="400"
         height="100%"
         style={{ border: "none", overflow: "hidden" }}
         scrolling="no"
