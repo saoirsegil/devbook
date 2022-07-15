@@ -8,6 +8,12 @@
   border-bottom: 1px solid gray;
 }
 
+.rightbar__sponsors:hover {
+  background-color: #d4d3d3;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .rightbar__container > h1 {
   font-size: 18px;
   margin: 20px 0px;
@@ -18,12 +24,30 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 15px;
+  padding: 8px;
 }
 
-.rightbar__sponsors > img {
+.sponsor__one > img {
   height: 150px;
   border-radius: 10px;
+}
+
+.sponsor__two > img {
+  height: 160px;
+  border-radius: 10px;
+}
+
+.sponsor__one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sponsor__two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .rightbar__text {
@@ -36,4 +60,58 @@
   font-weight: 400;
   font-size: 13px;
   margin: 5px 0px;
+}
+
+.rightbar__pages {
+  border-bottom: 1px solid gray;
+  padding: 30px 0px 0px 0px;
+}
+
+.rightbar__pages > h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.page__avatar {
+  display: flex;
+  padding: 10px;
+}
+
+.page__avatar > h1 {
+  margin-left: 10px;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+
+.page__icon {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.page__avatar:hover {
+  background-color: #d4d3d3;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.page__icon:hover {
+  background-color: #d4d3d3;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.page__icon .MuiSvgIcon-root {
+  margin-left: 15px;
+}
+
+.page__icon > h4 {
+  margin-left: 10px;
+  color: gray;
+}
+
+.page__icon .MuiSvgIcon-root {
+  color: gray;
 }

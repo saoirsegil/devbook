@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Header.css";
 
-import FacebookIcon from "../../asset/facebookk.png";
+import Icon from "../../asset/icon.png";
 
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import HomeIcon from "@mui/icons-material/Home";
@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__left">
-        <img src={FacebookIcon} alt="logo" />
+        <img src={Icon} alt="logo" />
         <div className="header__input">
           <SearchRoundedIcon />
           <input type="text" placeholder="Search Devbook" />
