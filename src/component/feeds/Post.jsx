@@ -7,15 +7,19 @@ import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined
 
 import React from "react";
 
+import { useStateValue } from "../../context/UserContext";
+
 import "./Post.css";
 
 const Post = ({ profileSrc, image, username, timestamp, message }) => {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="post">
       <div className="post__top">
-        <Avatar src={profileSrc} className="post__avatar" />
+        <Avatar src={user.photoURL} className="post__avatar" />
         <div className="post__topInfo">
-          <h3>{username}</h3>
+          <h3>{user.displayName}</h3>
           <div className="post__gray">
             <p>Timestamp...</p>
             <PublicIcon />
