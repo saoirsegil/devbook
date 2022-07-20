@@ -29,13 +29,17 @@ const MessageSender = () => {
         <form>
           <input
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => {
+              setInput(e.target.value);
+            }}
             className="messageSender__input"
             placeholder={`What's on your mind? ${user.displayName}`}
           />
           <input
             value={inputImage}
-            onChange={(e) => setInputImage(e.target.value)}
+            onChange={(e) => {
+              setInputImage(e.target.value);
+            }}
             placeholder="Image URL (Optional)"
             className="messageSender__imageInput"
           />
